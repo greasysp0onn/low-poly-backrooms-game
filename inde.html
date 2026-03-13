@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liminal Spaces | Project Potato</title>
+    <style>
+        body { margin: 0; overflow: hidden; background: #000; font-family: 'Courier New', Courier, monospace; }
+        #ui { position: absolute; bottom: 20px; left: 20px; color: #fbff00; text-shadow: 2px 2px #000; pointer-events: none; }
+        #vignette { position: absolute; top: 0; left: 0; width: 100%; height: 100%; 
+                    background: radial-gradient(circle, transparent 50%, rgba(0,0,0,0.8) 100%); pointer-events: none; }
+        canvas { display: block; image-rendering: pixelated; }
+    </style>
+</head>
+<body>
+    <div id="vignette"></div>
+    <div id="ui">
+        <div>LEVEL 0: "THE LOBBY"</div>
+        <div id="coords">X: 0 Z: 0</div>
+    </div>
+    <script type="importmap">
+        { "imports": { "three": "https://unpkg.com/three@0.160.0/build/three.module.js" } }
+    </script>
+    <script type="module" src="main.js"></script>
+</body>
+</html>
